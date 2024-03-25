@@ -18,7 +18,8 @@ struct ContentView: View {
                     $number,
                     from: 0.0,
                     through: 12.0,
-                    by: 0.1
+                    by: 0.1,
+                    sensitivity: .high
                 )
         }
         .padding()
