@@ -14,7 +14,12 @@ struct ContentView: View {
         VStack {
             Text("\(number, specifier: "%.1f")")
                 .focusable()
-                .digitalCrownRotation($number)
+                .digitalCrownRotation(
+                    $number,
+                    from: 0.0,
+                    through: 12.0,
+                    by: 0.1
+                )
         }
         .padding()
     }
